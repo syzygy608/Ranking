@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- DOMjudge version 8.2.1 -->
+    <meta charset="utf-8">
+    <title>Scoreboard demo - DOMjudge</title>
+    <link rel="icon" href="favicon.ico?v=8.2.1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css?v=8.2.1">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css?v=8.2.1">
+    <script src="js/jquery.min.js?v=8.2.1"></script>
+    <script src="js/bootstrap.bundle.min.js?v=8.2.1"></script>
+
+    <script src="js/domjudge.js?v=8.2.1"></script>
+                <link rel="stylesheet" href="style_domjudge.css?v=8.2.1">
+
+        
+        </head>
+<body class="static">
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                                                                                                                                        
+    <div data-ajax-refresh-target data-ajax-refresh-after="initializeScoreboard" class="mt-3">
+        
+
+    
+    <div class="card">
+        <div class="card-header" style="font-family: Roboto, sans-serif; display: flex;">
+            <span style="font-weight: bold;">Demo contest</span>
+            <span id="contesttimer" style="color: DimGray; margin-left: auto;">
+                                    contest over, waiting for results
+                            </span>
+        </div>
+
+                                </div> 
+    
+                    <div class="alert alert-warning" role="alert" style="font-size: 80%;">
+                                    The scoreboard was frozen with 60 minutes remaining - solutions
+                    submitted in the last 60 minutes of the contest are still shown as pending.
+                            </div>
+        
+                     <br/>
+         
+                
+
+<table class="scoreboard center ">
+
+        <colgroup>
+        <col id="scorerank"/>
+                    <col id="scoreflags"/>
+                        <col id="scoreteamname"/>
+    </colgroup>
+    <colgroup>
+        <col id="scoresolv"/>
+        <col id="scoretotal"/>
+    </colgroup>
+    <colgroup>
+                                    <col class="scoreprob"/>
+                            <col class="scoreprob"/>
+                            <col class="scoreprob"/>
+                            <col class="scoreprob"/>
+                            <col class="scoreprob"/>
+                        </colgroup>
+
+        
+    <thead>
+    <tr class="scoreheader" data-static="1">
+        <th title="rank" scope="col">rank</th>
+        <th title="team name" scope="col" colspan="2">team</th>
+        <th title="# solved / penalty time" colspan="2" scope="col">score</th>
+                                                                                    <th title="problem Hello World" scope="col">
+                    <a  target="_self">
+                        <span class="badge problem-badge" style="background-color: #9486EA; min-width: 28px; border: 1px solid #5446aa"><span style="color: #000000;">A</span></span>
+                                            </a>
+                </th>
+                                                                            <th title="problem Float special compare test" scope="col">
+                    <a  target="_self">
+                        <span class="badge problem-badge" style="background-color: #E93603; min-width: 28px; border: 1px solid #a90000"><span style="color: #ffffff;">B</span></span>
+                                            </a>
+                </th>
+                                                                            <th title="problem Boolean switch search" scope="col">
+                    <a  target="_self">
+                        <span class="badge problem-badge" style="background-color: #9B630C; min-width: 28px; border: 1px solid #5b2300"><span style="color: #ffffff;">C</span></span>
+                                            </a>
+                </th>
+                                                                            <th title="problem XORR" scope="col">
+                    <a  target="_self">
+                        <span class="badge problem-badge" style="background-color: #ffffff; min-width: 28px; border: 1px solid #bfbfbf"><span style="color: #000000;">setter</span></span>
+                                            </a>
+                </th>
+                                                                            <th title="problem TreeCentroid2" scope="col">
+                    <a  target="_self">
+                        <span class="badge problem-badge" style="background-color: #ffffff; min-width: 28px; border: 1px solid #bfbfbf"><span style="color: #000000;">treeCentroid</span></span>
+                                            </a>
+                </th>
+                        </tr>
+    </thead>
+    <tbody>
+                                                                                            
+                                            
+                                            <tr class="sortorderswitch" id="team:2">
+            <td class="scorepl ">
+                                                    1
+                                            </td>
+            <td class="scoreaf">
+                                                                                                            <a >
+                            <img loading="lazy" src="flags/4x3/nl.svg?v=8.2.1" alt="NLD" title="Netherlands" class="countryflag">
+                        </a>
+                                                </td>
+                                                                                <td class="scoretn cl_FFFFFF" title="Example teamname">
+                                                                                                                        <a data-toggle="modal" data-target="#team-modal-2" href="#">
+                    <span class="forceWidth">
+                                                Example teamname
+                    </span>
+                                            <span class="univ forceWidth">
+                                                            Utrecht University
+                                                    </span>
+                                    </a>
+            </td>
+                                                <td class="scorenc">2</td>
+            <td class="scorett">170</td>
+
+                                                                                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct score_first">
+                                    88                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                            </td>
+                                                                                                
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                            </td>
+                                                                                                
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                            </td>
+                                                                                                                                                                                                                        
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct score_first">
+                                    82                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                    </tr>
+    
+                    <tr style="border-top: 2px solid black;">
+                                    <td class="scoresummary" title="Summary" colspan="3">Summary</td>
+                            <td title="total solved" class="scorenc">
+                    2
+                </td>
+                        <td></td>
+                                            <td style="text-align: left;">
+                                                            <a >
+                        <i class="fas fa-thumbs-up fa-fw"></i>
+                        <span class="submcorrect" style="font-size:90%;" title="number of accepted submissions">
+                                1
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-thumbs-down fa-fw"></i>
+                        <span class="submreject" style="font-size:90%;" title="number of rejected submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-question-circle fa-fw"></i>
+                        <span class="submpend" style="font-size:90%;" title="number of pending submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-clock fa-fw"></i>
+                        <span style="font-size:90%;" title="first solved">
+                                                            88min
+                                                    </span>
+                    </a>
+                </td>
+                                            <td style="text-align: left;">
+                                                            <a >
+                        <i class="fas fa-thumbs-up fa-fw"></i>
+                        <span class="submcorrect" style="font-size:90%;" title="number of accepted submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-thumbs-down fa-fw"></i>
+                        <span class="submreject" style="font-size:90%;" title="number of rejected submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-question-circle fa-fw"></i>
+                        <span class="submpend" style="font-size:90%;" title="number of pending submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-clock fa-fw"></i>
+                        <span style="font-size:90%;" title="first solved">
+                                                            n/a
+                                                    </span>
+                    </a>
+                </td>
+                                            <td style="text-align: left;">
+                                                            <a >
+                        <i class="fas fa-thumbs-up fa-fw"></i>
+                        <span class="submcorrect" style="font-size:90%;" title="number of accepted submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-thumbs-down fa-fw"></i>
+                        <span class="submreject" style="font-size:90%;" title="number of rejected submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-question-circle fa-fw"></i>
+                        <span class="submpend" style="font-size:90%;" title="number of pending submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-clock fa-fw"></i>
+                        <span style="font-size:90%;" title="first solved">
+                                                            n/a
+                                                    </span>
+                    </a>
+                </td>
+                                            <td style="text-align: left;">
+                                                            <a >
+                        <i class="fas fa-thumbs-up fa-fw"></i>
+                        <span class="submcorrect" style="font-size:90%;" title="number of accepted submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-thumbs-down fa-fw"></i>
+                        <span class="submreject" style="font-size:90%;" title="number of rejected submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-question-circle fa-fw"></i>
+                        <span class="submpend" style="font-size:90%;" title="number of pending submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-clock fa-fw"></i>
+                        <span style="font-size:90%;" title="first solved">
+                                                            n/a
+                                                    </span>
+                    </a>
+                </td>
+                                            <td style="text-align: left;">
+                                                            <a >
+                        <i class="fas fa-thumbs-up fa-fw"></i>
+                        <span class="submcorrect" style="font-size:90%;" title="number of accepted submissions">
+                                1
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-thumbs-down fa-fw"></i>
+                        <span class="submreject" style="font-size:90%;" title="number of rejected submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-question-circle fa-fw"></i>
+                        <span class="submpend" style="font-size:90%;" title="number of pending submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-clock fa-fw"></i>
+                        <span style="font-size:90%;" title="first solved">
+                                                            82min
+                                                    </span>
+                    </a>
+                </td>
+                    </tr>
+        </tbody>
+</table>
+
+            <div class="modal fade" id="team-modal-2" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    Example teamname                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                                
+    <div class="row">
+        <div class="col-lg-6">
+            <table class="table table-sm table-striped">
+                <tr>
+                    <th>Name</th>
+                    <td>Example teamname</td>
+                </tr>
+                <tr>
+                    <th>Category</th>
+                    <td>Participants</td>
+                </tr>
+                                                    <tr>
+                        <th>Affiliation</th>
+                        <td>
+                                                                                                Utrecht University</td>
+                    </tr>
+                                            <tr>
+                            <th>Country</th>
+                            <td>
+                                <img src="flags/4x3/nl.svg?v=8.2.1" alt="" class="countryflag"> Netherlands
+                            </td>
+                        </tr>
+                                                                </table>
+        </div>
+                    </div>
+                        </div>
+            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    Close                </button>
+                            </div>
+        </div>
+    </div>
+</div>
+    
+    <p><br/><br/></p>
+
+        
+                    <table id="cell_legend" class="scoreboard scorelegend ">
+            <thead>
+            <tr>
+                <th scope="col">Cell colours</th>
+            </tr>
+            </thead>
+            <tbody>
+                                                <tr class="score_first">
+                        <td>Solved first</td>
+                    </tr>
+                                                                <tr class="score_correct">
+                        <td>Solved</td>
+                    </tr>
+                                                                <tr class="score_incorrect">
+                        <td>Tried, incorrect</td>
+                    </tr>
+                                                                <tr class="score_pending">
+                        <td>Tried, pending</td>
+                    </tr>
+                                                                <tr class="score_neutral">
+                        <td>Untried</td>
+                    </tr>
+                                        </tbody>
+        </table>
+    
+    
+<style>
+            
+        .cl_FFFFFF {
+            background-color: #FFFFFF;
+        }
+
+                
+        .cl_FFFFFF .forceWidth.toolong:after {
+            background: linear-gradient(to right,
+                rgba(255,255,255,0) 0%,
+                rgba(255,255,255,1) 96%);
+        }
+    </style>
+<script>
+    document.querySelectorAll(".forceWidth:not(.toolong)").forEach(el => {
+        if (el instanceof Element && el.scrollWidth > el.offsetWidth) {
+            el.classList.add("toolong");
+        }
+    });
+</script>
+
+     
+    <p id="lastmod">
+        Last Update: Tue 08 Aug 2023 13:44:52 CST<br/>
+        using <a href="https://www.domjudge.org/" target="_top">DOMjudge</a>
+    </p>
+    </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+            var domjudge_base_url = "";
+        $(function () {
+        $('body').on('change', '.custom-file-input', function () {
+            var files = this.files;
+            var fileNames = [];
+            for (var i = 0; i < files.length; i++) {
+                fileNames.push(files.item(i).name);
+            }
+            $(this).next('.custom-file-label').html(fileNames.join(", "));
+            $(this).next('.custom-file-label').removeClass('text-muted');
+        });
+
+        /* toggle refresh if set */
+                $('#refresh-navitem').on('click', function () {
+            toggleRefresh('', 30, 1);
+        });
+                /* Enable page refresh if set if wanted by the page, and wanted by the user */
+                enableRefresh('', 30, 1);
+        
+        initializeAjaxModals();
+    });
+</script>
+    <script>
+        initFavouriteTeams();
+        pinScoreheader();
+
+        var scoreboardUrl = '';
+
+        $(function () {
+            window.initializeScoreboard = function () {
+                var $newProgress = $('[data-ajax-refresh-target] > .d-none > [data-progress-bar]');
+                if ($newProgress.length) {
+                    var $oldProgress = $('body > [data-progress-bar]');
+                    $oldProgress.html($newProgress.children());
+                    $newProgress.parent().remove();
+                }
+
+                initFavouriteTeams();
+                pinScoreheader();
+            };
+        });
+    </script>
+</body>
+</html>
