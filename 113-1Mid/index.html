@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- DOMjudge version 8.2.1 -->
+    <meta charset="utf-8">
+    <title>Scoreboard Mid - DOMjudge</title>
+    <link rel="icon" href="favicon.ico?v=8.2.1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css?v=8.2.1">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css?v=8.2.1">
+    <script src="js/jquery.min.js?v=8.2.1"></script>
+    <script src="js/bootstrap.bundle.min.js?v=8.2.1"></script>
+
+    <script src="js/domjudge.js?v=8.2.1"></script>
+                <link rel="stylesheet" href="style_domjudge.css?v=8.2.1">
+
+        
+        </head>
+<body class="static">
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                                                                                                                                        
+    <div data-ajax-refresh-target data-ajax-refresh-after="initializeScoreboard" class="mt-3">
+        
+
+    
+    <div class="card">
+        <div class="card-header" style="font-family: Roboto, sans-serif; display: flex;">
+            <span style="font-weight: bold;">Midterm Contest</span>
+            <span id="contesttimer" style="color: DimGray; margin-left: auto;">
+                                                            final standings
+                                                </span>
+        </div>
+
+                                </div> 
+    
+        
+                     <br/>
+         
+                
+
+<table class="scoreboard center ">
+
+        <colgroup>
+        <col id="scorerank"/>
+                    <col id="scoreflags"/>
+                        <col id="scoreteamname"/>
+    </colgroup>
+    <colgroup>
+        <col id="scoresolv"/>
+        <col id="scoretotal"/>
+    </colgroup>
+    <colgroup>
+                                    <col class="scoreprob"/>
+                            <col class="scoreprob"/>
+                            <col class="scoreprob"/>
+                            <col class="scoreprob"/>
+                            <col class="scoreprob"/>
+                            <col class="scoreprob"/>
+                            <col class="scoreprob"/>
+                            <col class="scoreprob"/>
+                            <col class="scoreprob"/>
+                            <col class="scoreprob"/>
+                            <col class="scoreprob"/>
+                        </colgroup>
+
+        
+    <thead>
+    <tr class="scoreheader" data-static="1">
+        <th title="rank" scope="col">rank</th>
+        <th title="team name" scope="col" colspan="2">team</th>
+        <th title="# solved / penalty time" colspan="2" scope="col">score</th>
+                                                                                    <th title="problem Big number" scope="col">
+                    <a  target="_self">
+                        <span class="badge problem-badge" style="background-color: #ffffff; min-width: 28px; border: 1px solid #bfbfbf"><span style="color: #000000;">A</span></span>
+                                            </a>
+                </th>
+                                                                            <th title="problem Commit" scope="col">
+                    <a  target="_self">
+                        <span class="badge problem-badge" style="background-color: #ffffff; min-width: 28px; border: 1px solid #bfbfbf"><span style="color: #000000;">B</span></span>
+                                            </a>
+                </th>
+                                                                            <th title="problem EnglishQuiz" scope="col">
+                    <a  target="_self">
+                        <span class="badge problem-badge" style="background-color: #ffffff; min-width: 28px; border: 1px solid #bfbfbf"><span style="color: #000000;">C</span></span>
+                                            </a>
+                </th>
+                                                                            <th title="problem Game" scope="col">
+                    <a  target="_self">
+                        <span class="badge problem-badge" style="background-color: #ffffff; min-width: 28px; border: 1px solid #bfbfbf"><span style="color: #000000;">D</span></span>
+                                            </a>
+                </th>
+                                                                            <th title="problem life difficult" scope="col">
+                    <a  target="_self">
+                        <span class="badge problem-badge" style="background-color: #ffffff; min-width: 28px; border: 1px solid #bfbfbf"><span style="color: #000000;">E</span></span>
+                                            </a>
+                </th>
+                                                                            <th title="problem life review" scope="col">
+                    <a  target="_self">
+                        <span class="badge problem-badge" style="background-color: #ffffff; min-width: 28px; border: 1px solid #bfbfbf"><span style="color: #000000;">F</span></span>
+                                            </a>
+                </th>
+                                                                            <th title="problem life script" scope="col">
+                    <a  target="_self">
+                        <span class="badge problem-badge" style="background-color: #ffffff; min-width: 28px; border: 1px solid #bfbfbf"><span style="color: #000000;">G</span></span>
+                                            </a>
+                </th>
+                                                                            <th title="problem life sparks" scope="col">
+                    <a  target="_self">
+                        <span class="badge problem-badge" style="background-color: #ffffff; min-width: 28px; border: 1px solid #bfbfbf"><span style="color: #000000;">H</span></span>
+                                            </a>
+                </th>
+                                                                            <th title="problem mining" scope="col">
+                    <a  target="_self">
+                        <span class="badge problem-badge" style="background-color: #ffffff; min-width: 28px; border: 1px solid #bfbfbf"><span style="color: #000000;">I</span></span>
+                                            </a>
+                </th>
+                                                                            <th title="problem NoComment" scope="col">
+                    <a  target="_self">
+                        <span class="badge problem-badge" style="background-color: #ffffff; min-width: 28px; border: 1px solid #bfbfbf"><span style="color: #000000;">J</span></span>
+                                            </a>
+                </th>
+                                                                            <th title="problem Spark" scope="col">
+                    <a  target="_self">
+                        <span class="badge problem-badge" style="background-color: #ffffff; min-width: 28px; border: 1px solid #bfbfbf"><span style="color: #000000;">K</span></span>
+                                            </a>
+                </th>
+                        </tr>
+    </thead>
+    <tbody>
+                                                                                            
+                                            
+                                            <tr class="sortorderswitch" id="team:10">
+            <td class="scorepl gold-medal">
+                                                    1
+                                            </td>
+            <td class="scoreaf">
+                                                                </td>
+                                                                                <td class="scoretn cl_fffbc9" title="team_1001">
+                                                                                                                        <a data-toggle="modal" data-target="#team-modal-10" href="#">
+                    <span class="forceWidth">
+                                                team_1001
+                    </span>
+                                            <span class="univ forceWidth">
+                                                    </span>
+                                    </a>
+            </td>
+                                                <td class="scorenc">7</td>
+            <td class="scorett">482</td>
+
+                                                                                                                                                                                
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    136                                    <span>
+                                                                                    2 tries
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                            
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_incorrect">
+                                    &nbsp;                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                                                                        
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct score_first">
+                                    16                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    59                                    <span>
+                                                                                    2 tries
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                            </td>
+                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    68                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    84                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                                                                        
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct score_first">
+                                    24                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    55                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                            
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_incorrect">
+                                    &nbsp;                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                            </td>
+                                    </tr>
+                    
+                                            
+                                            <tr class="" id="team:11">
+            <td class="scorepl silver-medal">
+                                                    2
+                                            </td>
+            <td class="scoreaf">
+                                                                </td>
+                                                                                <td class="scoretn cl_fffbc9" title="team_1002">
+                                                                                                                        <a data-toggle="modal" data-target="#team-modal-11" href="#">
+                    <span class="forceWidth">
+                                                team_1002
+                    </span>
+                                            <span class="univ forceWidth">
+                                                    </span>
+                                    </a>
+            </td>
+                                                <td class="scorenc">7</td>
+            <td class="scorett">705</td>
+
+                                                                                                            
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                            </td>
+                                                                                                
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                            </td>
+                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    49                                    <span>
+                                                                                    2 tries
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                                                                        
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct score_first">
+                                    17                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                            
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_incorrect">
+                                    &nbsp;                                    <span>
+                                                                                    3 tries
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    72                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    121                                    <span>
+                                                                                    7 tries
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    57                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                                                                        
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct score_first">
+                                    43                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                                                                        
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct score_first">
+                                    166                                    <span>
+                                                                                    3 tries
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                            
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_incorrect">
+                                    &nbsp;                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                    </tr>
+                    
+                                            
+                                            <tr class="" id="team:14">
+            <td class="scorepl bronze-medal">
+                                                    3
+                                            </td>
+            <td class="scoreaf">
+                                                                </td>
+                                                                                <td class="scoretn cl_fffbc9" title="team_1005">
+                                                                                                                        <a data-toggle="modal" data-target="#team-modal-14" href="#">
+                    <span class="forceWidth">
+                                                team_1005
+                    </span>
+                                            <span class="univ forceWidth">
+                                                    </span>
+                                    </a>
+            </td>
+                                                <td class="scorenc">6</td>
+            <td class="scorett">474</td>
+
+                                                                                                                                                                                
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    131                                    <span>
+                                                                                    2 tries
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                            
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_incorrect">
+                                    &nbsp;                                    <span>
+                                                                                    5 tries
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    32                                    <span>
+                                                                                    3 tries
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    38                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                            
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_incorrect">
+                                    &nbsp;                                    <span>
+                                                                                    2 tries
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    57                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                                                                        
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct score_first">
+                                    73                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    83                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                            
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_incorrect">
+                                    &nbsp;                                    <span>
+                                                                                    8 tries
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                            </td>
+                                                                                                                                            
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_incorrect">
+                                    &nbsp;                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                    </tr>
+                    
+                                            
+                                            <tr class="" id="team:12">
+            <td class="scorepl ">
+                                                    4
+                                            </td>
+            <td class="scoreaf">
+                                                                </td>
+                                                                                <td class="scoretn cl_fffbc9" title="team_1003">
+                                                                                                                        <a data-toggle="modal" data-target="#team-modal-12" href="#">
+                    <span class="forceWidth">
+                                                team_1003
+                    </span>
+                                            <span class="univ forceWidth">
+                                                    </span>
+                                    </a>
+            </td>
+                                                <td class="scorenc">5</td>
+            <td class="scorett">382</td>
+
+                                                                                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct score_first">
+                                    14                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                            </td>
+                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    153                                    <span>
+                                                                                    4 tries
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    32                                    <span>
+                                                                                    2 tries
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                            
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_incorrect">
+                                    &nbsp;                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                                                                        
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct score_first">
+                                    57                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                            </td>
+                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    46                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                            
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_incorrect">
+                                    &nbsp;                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                            </td>
+                                                                                                                                            
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_incorrect">
+                                    &nbsp;                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                    </tr>
+                    
+                                            
+                                            <tr class="" id="team:13">
+            <td class="scorepl ">
+                                                    5
+                                            </td>
+            <td class="scoreaf">
+                                                                </td>
+                                                                                <td class="scoretn cl_fffbc9" title="team_1004">
+                                                                                                                        <a data-toggle="modal" data-target="#team-modal-13" href="#">
+                    <span class="forceWidth">
+                                                team_1004
+                    </span>
+                                            <span class="univ forceWidth">
+                                                    </span>
+                                    </a>
+            </td>
+                                                <td class="scorenc">5</td>
+            <td class="scorett">433</td>
+
+                                                                                                                                                                                
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    168                                    <span>
+                                                                                    2 tries
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                            </td>
+                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    46                                    <span>
+                                                                                    3 tries
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    35                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                            
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_incorrect">
+                                    &nbsp;                                    <span>
+                                                                                    5 tries
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    76                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                            
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_incorrect">
+                                    &nbsp;                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                                                    
+                                        
+                                                                                                                                                                                    
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_correct">
+                                    48                                    <span>
+                                                                                    1 try
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                                                            
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                                    <a >
+                                <div class="score_incorrect">
+                                    &nbsp;                                    <span>
+                                                                                    9 tries
+                                                                            </span>
+                                </div>
+                            </a>
+                                            </td>
+                                                                                                
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                            </td>
+                                                                                                
+                                        
+                                                            
+                                        
+                    <td class="score_cell">
+                                            </td>
+                                    </tr>
+    
+                    <tr style="border-top: 2px solid black;">
+                                    <td class="scoresummary" title="Summary" colspan="3">Summary</td>
+                            <td title="total solved" class="scorenc">
+                    30
+                </td>
+                        <td></td>
+                                            <td style="text-align: left;">
+                                                            <a >
+                        <i class="fas fa-thumbs-up fa-fw"></i>
+                        <span class="submcorrect" style="font-size:90%;" title="number of accepted submissions">
+                                4
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-thumbs-down fa-fw"></i>
+                        <span class="submreject" style="font-size:90%;" title="number of rejected submissions">
+                                3
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-question-circle fa-fw"></i>
+                        <span class="submpend" style="font-size:90%;" title="number of pending submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-clock fa-fw"></i>
+                        <span style="font-size:90%;" title="first solved">
+                                                            14min
+                                                    </span>
+                    </a>
+                </td>
+                                            <td style="text-align: left;">
+                                                            <a >
+                        <i class="fas fa-thumbs-up fa-fw"></i>
+                        <span class="submcorrect" style="font-size:90%;" title="number of accepted submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-thumbs-down fa-fw"></i>
+                        <span class="submreject" style="font-size:90%;" title="number of rejected submissions">
+                                6
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-question-circle fa-fw"></i>
+                        <span class="submpend" style="font-size:90%;" title="number of pending submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-clock fa-fw"></i>
+                        <span style="font-size:90%;" title="first solved">
+                                                            n/a
+                                                    </span>
+                    </a>
+                </td>
+                                            <td style="text-align: left;">
+                                                            <a >
+                        <i class="fas fa-thumbs-up fa-fw"></i>
+                        <span class="submcorrect" style="font-size:90%;" title="number of accepted submissions">
+                                5
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-thumbs-down fa-fw"></i>
+                        <span class="submreject" style="font-size:90%;" title="number of rejected submissions">
+                                8
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-question-circle fa-fw"></i>
+                        <span class="submpend" style="font-size:90%;" title="number of pending submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-clock fa-fw"></i>
+                        <span style="font-size:90%;" title="first solved">
+                                                            16min
+                                                    </span>
+                    </a>
+                </td>
+                                            <td style="text-align: left;">
+                                                            <a >
+                        <i class="fas fa-thumbs-up fa-fw"></i>
+                        <span class="submcorrect" style="font-size:90%;" title="number of accepted submissions">
+                                5
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-thumbs-down fa-fw"></i>
+                        <span class="submreject" style="font-size:90%;" title="number of rejected submissions">
+                                2
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-question-circle fa-fw"></i>
+                        <span class="submpend" style="font-size:90%;" title="number of pending submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-clock fa-fw"></i>
+                        <span style="font-size:90%;" title="first solved">
+                                                            17min
+                                                    </span>
+                    </a>
+                </td>
+                                            <td style="text-align: left;">
+                                                            <a >
+                        <i class="fas fa-thumbs-up fa-fw"></i>
+                        <span class="submcorrect" style="font-size:90%;" title="number of accepted submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-thumbs-down fa-fw"></i>
+                        <span class="submreject" style="font-size:90%;" title="number of rejected submissions">
+                                11
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-question-circle fa-fw"></i>
+                        <span class="submpend" style="font-size:90%;" title="number of pending submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-clock fa-fw"></i>
+                        <span style="font-size:90%;" title="first solved">
+                                                            n/a
+                                                    </span>
+                    </a>
+                </td>
+                                            <td style="text-align: left;">
+                                                            <a >
+                        <i class="fas fa-thumbs-up fa-fw"></i>
+                        <span class="submcorrect" style="font-size:90%;" title="number of accepted submissions">
+                                5
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-thumbs-down fa-fw"></i>
+                        <span class="submreject" style="font-size:90%;" title="number of rejected submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-question-circle fa-fw"></i>
+                        <span class="submpend" style="font-size:90%;" title="number of pending submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-clock fa-fw"></i>
+                        <span style="font-size:90%;" title="first solved">
+                                                            57min
+                                                    </span>
+                    </a>
+                </td>
+                                            <td style="text-align: left;">
+                                                            <a >
+                        <i class="fas fa-thumbs-up fa-fw"></i>
+                        <span class="submcorrect" style="font-size:90%;" title="number of accepted submissions">
+                                3
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-thumbs-down fa-fw"></i>
+                        <span class="submreject" style="font-size:90%;" title="number of rejected submissions">
+                                7
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-question-circle fa-fw"></i>
+                        <span class="submpend" style="font-size:90%;" title="number of pending submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-clock fa-fw"></i>
+                        <span style="font-size:90%;" title="first solved">
+                                                            73min
+                                                    </span>
+                    </a>
+                </td>
+                                            <td style="text-align: left;">
+                                                            <a >
+                        <i class="fas fa-thumbs-up fa-fw"></i>
+                        <span class="submcorrect" style="font-size:90%;" title="number of accepted submissions">
+                                5
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-thumbs-down fa-fw"></i>
+                        <span class="submreject" style="font-size:90%;" title="number of rejected submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-question-circle fa-fw"></i>
+                        <span class="submpend" style="font-size:90%;" title="number of pending submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-clock fa-fw"></i>
+                        <span style="font-size:90%;" title="first solved">
+                                                            24min
+                                                    </span>
+                    </a>
+                </td>
+                                            <td style="text-align: left;">
+                                                            <a >
+                        <i class="fas fa-thumbs-up fa-fw"></i>
+                        <span class="submcorrect" style="font-size:90%;" title="number of accepted submissions">
+                                2
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-thumbs-down fa-fw"></i>
+                        <span class="submreject" style="font-size:90%;" title="number of rejected submissions">
+                                18
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-question-circle fa-fw"></i>
+                        <span class="submpend" style="font-size:90%;" title="number of pending submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-clock fa-fw"></i>
+                        <span style="font-size:90%;" title="first solved">
+                                                            43min
+                                                    </span>
+                    </a>
+                </td>
+                                            <td style="text-align: left;">
+                                                            <a >
+                        <i class="fas fa-thumbs-up fa-fw"></i>
+                        <span class="submcorrect" style="font-size:90%;" title="number of accepted submissions">
+                                1
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-thumbs-down fa-fw"></i>
+                        <span class="submreject" style="font-size:90%;" title="number of rejected submissions">
+                                3
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-question-circle fa-fw"></i>
+                        <span class="submpend" style="font-size:90%;" title="number of pending submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-clock fa-fw"></i>
+                        <span style="font-size:90%;" title="first solved">
+                                                            166min
+                                                    </span>
+                    </a>
+                </td>
+                                            <td style="text-align: left;">
+                                                            <a >
+                        <i class="fas fa-thumbs-up fa-fw"></i>
+                        <span class="submcorrect" style="font-size:90%;" title="number of accepted submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-thumbs-down fa-fw"></i>
+                        <span class="submreject" style="font-size:90%;" title="number of rejected submissions">
+                                3
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-question-circle fa-fw"></i>
+                        <span class="submpend" style="font-size:90%;" title="number of pending submissions">
+                                0
+                            </span>
+                        <br/>
+
+                        <i class="fas fa-clock fa-fw"></i>
+                        <span style="font-size:90%;" title="first solved">
+                                                            n/a
+                                                    </span>
+                    </a>
+                </td>
+                    </tr>
+        </tbody>
+</table>
+
+            <div class="modal fade" id="team-modal-10" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    team_1001                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                                
+    <div class="row">
+        <div class="col-lg-6">
+            <table class="table table-sm table-striped">
+                <tr>
+                    <th>Name</th>
+                    <td>team_1001</td>
+                </tr>
+                <tr>
+                    <th>Category</th>
+                    <td>場內組</td>
+                </tr>
+                                                            </table>
+        </div>
+                    </div>
+                        </div>
+            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    Close                </button>
+                            </div>
+        </div>
+    </div>
+</div>
+            <div class="modal fade" id="team-modal-11" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    team_1002                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                                
+    <div class="row">
+        <div class="col-lg-6">
+            <table class="table table-sm table-striped">
+                <tr>
+                    <th>Name</th>
+                    <td>team_1002</td>
+                </tr>
+                <tr>
+                    <th>Category</th>
+                    <td>場內組</td>
+                </tr>
+                                                            </table>
+        </div>
+                    </div>
+                        </div>
+            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    Close                </button>
+                            </div>
+        </div>
+    </div>
+</div>
+            <div class="modal fade" id="team-modal-14" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    team_1005                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                                
+    <div class="row">
+        <div class="col-lg-6">
+            <table class="table table-sm table-striped">
+                <tr>
+                    <th>Name</th>
+                    <td>team_1005</td>
+                </tr>
+                <tr>
+                    <th>Category</th>
+                    <td>場內組</td>
+                </tr>
+                                                            </table>
+        </div>
+                    </div>
+                        </div>
+            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    Close                </button>
+                            </div>
+        </div>
+    </div>
+</div>
+            <div class="modal fade" id="team-modal-12" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    team_1003                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                                
+    <div class="row">
+        <div class="col-lg-6">
+            <table class="table table-sm table-striped">
+                <tr>
+                    <th>Name</th>
+                    <td>team_1003</td>
+                </tr>
+                <tr>
+                    <th>Category</th>
+                    <td>場內組</td>
+                </tr>
+                                                            </table>
+        </div>
+                    </div>
+                        </div>
+            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    Close                </button>
+                            </div>
+        </div>
+    </div>
+</div>
+            <div class="modal fade" id="team-modal-13" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    team_1004                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                                
+    <div class="row">
+        <div class="col-lg-6">
+            <table class="table table-sm table-striped">
+                <tr>
+                    <th>Name</th>
+                    <td>team_1004</td>
+                </tr>
+                <tr>
+                    <th>Category</th>
+                    <td>場內組</td>
+                </tr>
+                                                            </table>
+        </div>
+                    </div>
+                        </div>
+            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    Close                </button>
+                            </div>
+        </div>
+    </div>
+</div>
+    
+    <p><br/><br/></p>
+
+        
+                    <table id="cell_legend" class="scoreboard scorelegend ">
+            <thead>
+            <tr>
+                <th scope="col">Cell colours</th>
+            </tr>
+            </thead>
+            <tbody>
+                                                <tr class="score_first">
+                        <td>Solved first</td>
+                    </tr>
+                                                                <tr class="score_correct">
+                        <td>Solved</td>
+                    </tr>
+                                                                <tr class="score_incorrect">
+                        <td>Tried, incorrect</td>
+                    </tr>
+                                                                <tr class="score_pending">
+                        <td>Tried, pending</td>
+                    </tr>
+                                                                <tr class="score_neutral">
+                        <td>Untried</td>
+                    </tr>
+                                        </tbody>
+        </table>
+    
+            <table class="scoreboard scorelegend ">
+            <thead>
+            <tr>
+                <th scope="col">Medals </th>
+            </tr>
+            </thead>
+            <tbody>
+                                    <tr class="gold-medal">
+                        <td>Gold Medal</td>
+                    </tr>
+                                    <tr class="silver-medal">
+                        <td>Silver Medal</td>
+                    </tr>
+                                    <tr class="bronze-medal">
+                        <td>Bronze Medal</td>
+                    </tr>
+                            </tbody>
+        </table>
+    
+<style>
+            
+        .cl_FFFFFF {
+            background-color: #FFFFFF;
+        }
+
+                
+        .cl_FFFFFF .forceWidth.toolong:after {
+            background: linear-gradient(to right,
+                rgba(255,255,255,0) 0%,
+                rgba(255,255,255,1) 96%);
+        }
+            
+        .cl_fffbc9 {
+            background-color: #fffbc9;
+        }
+
+                
+        .cl_fffbc9 .forceWidth.toolong:after {
+            background: linear-gradient(to right,
+                rgba(255,251,201,0) 0%,
+                rgba(255,251,201,1) 96%);
+        }
+    </style>
+<script>
+    document.querySelectorAll(".forceWidth:not(.toolong)").forEach(el => {
+        if (el instanceof Element && el.scrollWidth > el.offsetWidth) {
+            el.classList.add("toolong");
+        }
+    });
+</script>
+
+     
+    <p id="lastmod">
+        Last Update: Sun 01 Dec 2024 23:08:02 CST<br/>
+        using <a href="https://www.domjudge.org/" target="_top">DOMjudge</a>
+    </p>
+    </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+            var domjudge_base_url = "";
+        $(function () {
+        $('body').on('change', '.custom-file-input', function () {
+            var files = this.files;
+            var fileNames = [];
+            for (var i = 0; i < files.length; i++) {
+                fileNames.push(files.item(i).name);
+            }
+            $(this).next('.custom-file-label').html(fileNames.join(", "));
+            $(this).next('.custom-file-label').removeClass('text-muted');
+        });
+
+        /* toggle refresh if set */
+                $('#refresh-navitem').on('click', function () {
+            toggleRefresh('', 30, 1);
+        });
+                /* Enable page refresh if set if wanted by the page, and wanted by the user */
+                enableRefresh('', 30, 1);
+        
+        initializeAjaxModals();
+    });
+</script>
+    <script>
+        initFavouriteTeams();
+        pinScoreheader();
+
+        var scoreboardUrl = '';
+
+        $(function () {
+            window.initializeScoreboard = function () {
+                var $newProgress = $('[data-ajax-refresh-target] > .d-none > [data-progress-bar]');
+                if ($newProgress.length) {
+                    var $oldProgress = $('body > [data-progress-bar]');
+                    $oldProgress.html($newProgress.children());
+                    $newProgress.parent().remove();
+                }
+
+                initFavouriteTeams();
+                pinScoreheader();
+            };
+        });
+    </script>
+</body>
+</html>
